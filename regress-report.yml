@@ -1,0 +1,96 @@
+#Поиск товара по ключевому слову
+---
+test-cases:
+  - summary: |
+      Проверка отображения товара в наличии
+    status: fail
+
+test-cases:
+  - summary: |
+      Проверка отображения товара не в наличии
+    status: fail
+
+test-cases:
+  - summary: |
+      Поиск товара по числовому значению
+    status: fail
+
+test-cases:
+  - summary: |
+      Поиск товара с введённым "пробелом"
+    status: fail
+
+test-cases:
+  - summary: |
+      Поиск товара по символам
+    status: fail
+
+#Поиск товара по категории
+test-cases:
+  - summary: |
+      Поиск товара по выбранной категории
+    status: pass
+
+test-cases:
+  - summary: |
+      Отображение товара при переходе страницы
+    status: pass
+
+test-cases:
+  - summary: |
+      Проверка изменения категории при переходе страницы
+    status: fail
+
+#Фильтрация
+test-cases:
+  - summary: |
+      Проверка отображения товара по производителю
+    status: fail
+
+test-cases:
+  - summary: |
+      Проверка отмеченного чекбокса "В наличии"
+    status: pass
+
+test-cases:
+  - summary: |
+      Проверка не отмеченного чекбокса "В наличии"
+    status: fail
+
+test-cases:
+  - summary: |
+      Ввод ценового диапазона
+    status: fail
+
+test-cases:
+  - summary: |
+      Проверка фильтрации по отрицательной цене
+    status: fail
+
+test-cases:
+  - summary: |
+      Проверка фильтрации по вводу символов
+    status: fail
+
+test-cases:
+  - summary: |
+      Проверка просмотра товара с подробной информацией
+    status: pass
+
+#Просмотр товара
+test-cases:
+  - summary: |
+      Проверка просмотра товара с подробной информацией
+    status: pass
+
+#Корзина
+test-cases:
+  - summary: |
+      Проверка добавления товара в корзину
+    status: pass
+
+#Мобильная версия
+test-cases:
+  - summary: |
+      Проверка работоспособности мобильной версии
+    status: pass
