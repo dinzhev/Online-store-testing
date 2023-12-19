@@ -237,6 +237,46 @@ test-cases:
       Проверка работоспособности мобильной версии
     status: pass
 
+#Ошибки
+test-cases:
+  - summary: |
+      Сообщение об ошибках
+    status: pass
+
+test-cases:
+  - summary: |
+      Поле поиска "налезает" на карточки товара
+    status: pass
+
+test-cases:
+  - summary: |
+      Не отображается флаг
+    status: fail
+
+- summary: |
+    Не отображаются флаги
+  environment: |
+    Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
+    ОС Windows 10 22H2
+  steps-to-reproduce: |
+    1. Зайти на сайт интернет-магазина
+    2. Кликнуть на "Языки"
+    3. Флаги не отображаются
+  expected-result: |
+    Отображаются все флаги
+  actual-result: |
+    Ни один флаг не отображается
+    
+test-cases:
+  - summary: |
+      Растянутые изображения
+    status: pass
+
+test-cases:
+  - summary: |
+      Кнопка назад на главной странице
+    status: pass
+
 #Баг-репорт
 bugreports:
   - summary: |
