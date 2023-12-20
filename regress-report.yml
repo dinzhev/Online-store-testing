@@ -1,12 +1,12 @@
 ---
 #Поиск товара по ключевому слову
 test-cases:
-  - summary: |
+    - summary: |
       Проверка отображения товара в наличии
     status: fail
 
 bugreports:
-  - summary: |
+    - summary: |
       Не работает поиск по ключевому слову
     environment: |
       Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -20,12 +20,12 @@ bugreports:
       На странице отображаются все товары
       
 test-cases:
-  - summary: |
+    - summary: |
       Проверка отображения товара не в наличии
     status: fail
     
 bugreports:
-  - summary: |
+    - summary: |
       Не работает поиск по ключевому слову
     environment: |
       Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -39,12 +39,12 @@ bugreports:
       На странице отображаются все товары
       
 test-cases:
-  - summary: |
+    - summary: |
       Поиск товара по числовому значению
     status: fail
     
 bugreports:
-  - summary: |
+    - summary: |
       Поиск по числу не работает
     environment: |
       Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -59,17 +59,17 @@ bugreports:
       На странице отображаются все товары
       
 test-cases:
-  - summary: |
+    - summary: |
       Поиск товара с введённым "пробелом"
     status: pass
     
 test-cases:
-  - summary: |
+    - summary: |
       Поиск товара по символам
     status: fail
     
 bugreports:
-- summary: |
+  - summary: |
     При вводе символа - выдаётся список товаров
   environment: |
     Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -84,23 +84,23 @@ bugreports:
     
 #Поиск товара по категории
 test-cases:
-  - summary: |
+    - summary: |
       Поиск товара по выбранной категории
     status: pass
     
 test-cases:
-  - summary: |
+    - summary: |
       Отображение товара при переходе страницы
     status: pass
     
 #Поиск товара по категории
 test-cases:
-  - summary: |
+    - summary: |
       Проверка изменения категории при переходе страницы
     status: fail
     
 bugreports:
-- summary: |
+  - summary: |
     Пропадает кнопка для перехода страницы
   environment: |
     Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -116,12 +116,12 @@ bugreports:
     
 #Фильтрация
 test-cases:
-  - summary: |
+    - summary: |
       Проверка отображения товара по производителю
     status: fail
     
 bugreports:
-- summary: |
+  - summary: |
     Пропадает кнопка для перехода страницы
   environment: |
     Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -137,18 +137,18 @@ bugreports:
     Кнопка перехода страницы пропадает
     
 test-cases:
-  - summary: |
+    - summary: |
       Проверка отмеченного чекбокса "В наличии"
     status: pass
     
 #Фильтрация
 test-cases:
-  - summary: |
+    - summary: |
       Проверка не отмеченного чекбокса "В наличии"
     status: fail
     
 bugreports:
-- summary: |
+  - summary: |
     Не отображаются товары "не в наличии"
   environment: |
     Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -163,12 +163,12 @@ bugreports:
     На странице отображаются все товары
     
 test-cases:
-  - summary: |
+    - summary: |
       Ввод ценового диапазона
     status: fail
     
 bugreports:
-- summary: |
+  - summary: |
     Выводятся товароы не из диапазона
   environment: |
     Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -184,12 +184,12 @@ bugreports:
     Выводятся товары, в которых не учитывается скидка и сотые доли цены
     
 test-cases:
-  - summary: |
+    - summary: |
       Проверка фильтрации по отрицательной цене
     status: fail
     
 bugreports:
-- summary: |
+  - summary: |
     Отображение товара при отрицательной цене
   environment: |
     Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -206,12 +206,12 @@ bugreports:
     Выводятся товары
     
 test-cases:
-  - summary: |
+    - summary: |
       Проверка фильтрации по вводу символов
     status: fail
     
 bugreports:
-- summary: |
+  - summary: |
     Отображение товаров, при некоррктном вводе цены
   environment: |
     Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -228,7 +228,7 @@ bugreports:
     
 #Просмотр товара
 test-cases:
-  - summary: |
+    - summary: |
       Проверка просмотра товара с подробной информацией
     status: pass
     
@@ -236,14 +236,14 @@ test-cases:
 test-cases:
   - summary: |
       Проверка добавления товара в корзину
-    status: pass
+  status: pass
     
   - summary: |
       Проверка отображения заказа
-    status: fail
+  status: fail
     
 bugreports:
-- summary: |
+  - summary: |
     Неравномерное отображение данных в заказе
   environment: |
     Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -260,18 +260,18 @@ bugreports:
     
 #Мобильная версия
 test-cases:
-  - summary: |
+    - summary: |
       Проверка работоспособности мобильной версии
     status: pass
     
 #Ошибки
 test-cases:
-  - summary: |
+    - summary: |
       Сообщение об ошибках
     status: fail
     
 bugreports:
-- summary: |
+  - summary: |
     Сообщение об ошибках
   environment: |
     Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -286,17 +286,17 @@ bugreports:
     Проблемы на странице
     
 test-cases:
-  - summary: |
+    - summary: |
       Поле поиска "налезает" на карточки товара
     status: pass
     
 test-cases:
-  - summary: |
+    - summary: |
       Не отображается флаг
     status: fail
     
 bugreports:
-- summary: |
+  - summary: |
     Не отображаются флаги
   environment: |
     Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -311,23 +311,23 @@ bugreports:
     Ни один флаг не отображается
     
 test-cases:
-  - summary: |
+    - summary: |
       Растянутые изображения
     status: pass
     
 test-cases:
-  - summary: |
+    - summary: |
       Кнопка назад на главной странице
     status: pass
     
 test-cases:
-  - summary: |
+    - summary: |
       Переход по ссылке в категорию
     status: pass
     
 #Ошибки
 bugreports:
-- summary: |
+  - summary: |
     Сообщение об ошибках
   environment: |
     Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -342,7 +342,7 @@ bugreports:
     Отображается сообщение о проблемах на странице
     
 bugreports:
-- summary: |
+  - summary: |
     Не отображается флаг
   environment: |
     Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -356,7 +356,7 @@ bugreports:
     Не отображается ни один флаг
     
 bugreports:
-- summary: |
+  - summary: |
     Текст кнопки "добавить" в два ряда
   environment: |
     Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -373,7 +373,7 @@ bugreports:
     
 #Новый баг-репорт
 bugreports:
-  - summary: |
+    - summary: |
       В мобильной версии поиск и фильтры снизу страницы
     environment: |
       Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -388,7 +388,7 @@ bugreports:
       Поисковая строка и фильтры находятся в нижней части сайта
       
 bugreports:
-  - summary: |
+    - summary: |
       Ссылка на подробный просмотр товара
     environment: |
       Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -403,7 +403,7 @@ bugreports:
       Нет ссылки на подробный просмотр товара в наименовании и описании товара
       
 bugreports:
-  - summary: |
+    - summary: |
       Отличие карточек товара по стилям
     environment: |
       Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -418,7 +418,7 @@ bugreports:
       Ошибка изображена на скриншоте /bug.png
       
 bugreports:
-  - summary: |
+    - summary: |
       Цена в поле "До" может быть отрицательной
     environment: |
       Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
@@ -433,7 +433,7 @@ bugreports:
       В форме ввода цены, в поле "До", при нажатии на стрелочку "вниз" цена уходит в минус после нуля
       
 bugreports:
-  - summary: |
+    - summary: |
       Кнопки в корзине не в один ряд
     environment: |
       Google Chrome Версия 120.0.6099.109 (Официальная сборка), (64 бит)
