@@ -67,7 +67,8 @@ test-cases:
   - summary: |
       Поиск товара по символам
     status: fail
-
+    
+bugreports:
 - summary: |
     При вводе символа - выдаётся список товаров
   environment: |
@@ -98,6 +99,7 @@ test-cases:
       Проверка изменения категории при переходе страницы
     status: fail
 
+bugreports:
 - summary: |
     Пропадает кнопка для перехода страницы
   environment: |
@@ -118,6 +120,7 @@ test-cases:
       Проверка отображения товара по производителю
     status: fail
 
+bugreports:
 - summary: |
     Пропадает кнопка для перехода страницы
   environment: |
@@ -144,6 +147,7 @@ test-cases:
       Проверка не отмеченного чекбокса "В наличии"
     status: fail
 
+bugreports:
 - summary: |
     Не отображаются товары "не в наличии"
   environment: |
@@ -163,6 +167,7 @@ test-cases:
       Ввод ценового диапазона
     status: fail
 
+bugreports:
 - summary: |
     Выводятся товароы не из диапазона
   environment: |
@@ -183,6 +188,7 @@ test-cases:
       Проверка фильтрации по отрицательной цене
     status: fail
 
+bugreports:
 - summary: |
     Отображение товара при отрицательной цене
   environment: |
@@ -204,6 +210,7 @@ test-cases:
       Проверка фильтрации по вводу символов
     status: fail
 
+bugreports:
 - summary: |
     Отображение товаров, при некоррктном вводе цены
   environment: |
@@ -235,6 +242,7 @@ test-cases:
       Проверка отображения заказа
     status: fail
 
+bugreports:
 - summary: |
     Неравномерное отображение данных в заказе
   environment: |
@@ -262,6 +270,7 @@ test-cases:
       Сообщение об ошибках
     status: fail
 
+bugreports:
 - summary: |
     Сообщение об ошибках
   environment: |
@@ -286,6 +295,7 @@ test-cases:
       Не отображается флаг
     status: fail
 
+bugreports:
 - summary: |
     Не отображаются флаги
   environment: |
@@ -314,7 +324,9 @@ test-cases:
   - summary: |
       Переход по ссылке в категорию
     status: pass
+
 #Ошибки
+bugreports:
 - summary: |
     Сообщение об ошибках
   environment: |
@@ -329,6 +341,7 @@ test-cases:
   actual-result: |
     Отображается сообщение о проблемах на странице
 
+bugreports:
 - summary: |
     Не отображается флаг
   environment: |
@@ -342,6 +355,7 @@ test-cases:
   actual-result: |
     Не отображается ни один флаг
 
+bugreports:
 - summary: |
     Текст кнопки "добавить" в два ряда
   environment: |
