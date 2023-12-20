@@ -19,12 +19,12 @@ bugreports:
     actual-result: |
       На странице отображаются все товары
 
-test-cases:
+
   - summary: |
       Проверка отображения товара не в наличии
     status: fail
 
-bugreports:
+
   - summary: |
       Не работает поиск по ключевому слову
     environment: |
@@ -38,12 +38,12 @@ bugreports:
     actual-result: |
       На странице отображаются все товары
 
-test-cases:
+
   - summary: |
       Поиск товара по числовому значению
     status: fail
 
-bugreports:
+
   - summary: |
       Поиск по числу не работает
     environment: |
@@ -58,17 +58,17 @@ bugreports:
     actual-result: |
       На странице отображаются все товары
 
-test-cases:
+
   - summary: |
       Поиск товара с введённым "пробелом"
     status: pass
 
-test-cases:
+
   - summary: |
       Поиск товара по символам
     status: fail
 
-bugreports:
+
   - summary: |
       При вводе символа - выдаётся список товаров
     environment: |
@@ -83,23 +83,23 @@ bugreports:
       В результате поиска отображается карточки с символом
 
 #Поиск товара по категории
-test-cases:
+
   - summary: |
       Поиск товара по выбранной категории
     status: pass
 
-test-cases:
+
   - summary: |
       Отображение товара при переходе страницы
     status: pass
 
 #Поиск товара по категории
-test-cases:
+
   - summary: |
       Проверка изменения категории при переходе страницы
     status: fail
 
-bugreports:
+
   - summary: |
       Пропадает кнопка для перехода страницы
     environment: |
@@ -115,12 +115,12 @@ bugreports:
       Кнопка перехода страницы пропадает
 
 #Фильтрация
-test-cases:
+
   - summary: |
       Проверка отображения товара по производителю
     status: fail
 
-bugreports:
+
   - summary: |
       Пропадает кнопка для перехода страницы
     environment: |
@@ -136,18 +136,18 @@ bugreports:
     actual-result: |
       Кнопка перехода страницы пропадает
 
-test-cases:
+
   - summary: |
       Проверка отмеченного чекбокса "В наличии"
     status: pass
 
 #Фильтрация
-test-cases:
+
   - summary: |
       Проверка не отмеченного чекбокса "В наличии"
     status: fail
 
-bugreports:
+
   - summary: |
       Не отображаются товары "не в наличии"
     environment: |
@@ -162,12 +162,12 @@ bugreports:
     actual-result: |
       На странице отображаются все товары
 
-test-cases:
+
   - summary: |
       Ввод ценового диапазона
     status: fail
 
-bugreports:
+
   - summary: |
       Выводятся товароы не из диапазона
     environment: |
@@ -183,12 +183,12 @@ bugreports:
     actual-result: |
       Выводятся товары, в которых не учитывается скидка и сотые доли цены
 
-test-cases:
+
   - summary: |
       Проверка фильтрации по отрицательной цене
     status: fail
 
-bugreports:
+
   - summary: |
       Отображение товара при отрицательной цене
     environment: |
@@ -205,12 +205,12 @@ bugreports:
     actual-result: |
       Выводятся товары
 
-test-cases:
+
   - summary: |
       Проверка фильтрации по вводу символов
     status: fail
 
-bugreports:
+
   - summary: |
       Отображение товаров, при некоррктном вводе цены
     environment: |
@@ -227,23 +227,23 @@ bugreports:
       Выводятся товары
 
 #Просмотр товара
-test-cases:
+
   - summary: |
       Проверка просмотра товара с подробной информацией
     status: pass
 
 #Корзина
-test-cases:
+
   - summary: |
       Проверка добавления товара в корзину
     status: pass
 
-test-cases:
+
   - summary: |
       Проверка отображения заказа
     status: fail
 
-bugreports:
+
   - summary: |
       Неравномерное отображение данных в заказе
     environment: |
@@ -260,18 +260,18 @@ bugreports:
       Данные в таблице отображаются не структурированно и не ровно
 
 #Мобильная версия
-test-cases:
+
   - summary: |
       Проверка работоспособности мобильной версии
     status: pass
 ---
 #Ошибки
-test-cases:
+
   - summary: |
       Сообщение об ошибках
     status: fail
 
-bugreports:
+
   - summary: |
       Сообщение об ошибках
     environment: |
@@ -286,17 +286,17 @@ bugreports:
     actual-result: |
       Проблемы на странице
 
-test-cases:
+
   - summary: |
       Поле поиска "налезает" на карточки товара
     status: pass
 
-test-cases:
+
   - summary: |
       Не отображается флаг
     status: fail
 
-bugreports:
+
   - summary: |
       Не отображаются флаги
     environment: |
@@ -311,22 +311,22 @@ bugreports:
     actual-result: |
       Ни один флаг не отображается
 
-test-cases:
+
   - summary: |
       Растянутые изображения
     status: pass
 
-test-cases:
+
   - summary: |
       Кнопка назад на главной странице
     status: pass
 
-test-cases:
+
   - summary: |
       Переход по ссылке в категорию
     status: pass
 
-bugreports:
+
   - summary: |
       Текст кнопки "добавить" в два ряда
     environment: |
@@ -343,7 +343,7 @@ bugreports:
       Текст кнопок разный - какая-то часть в один ряд, другая в два
 
 #Новый баг-репорт
-bugreports:
+
   - summary: |
       В мобильной версии поиск и фильтры снизу страницы
     environment: |
@@ -358,7 +358,7 @@ bugreports:
     actual-result: |
       Поисковая строка и фильтры находятся в нижней части сайта
 
-bugreports:
+
   - summary: |
       Ссылка на подробный просмотр товара
     environment: |
@@ -373,7 +373,7 @@ bugreports:
     actual-result: |
       Нет ссылки на подробный просмотр товара в наименовании и описании товара
 
-bugreports:
+
   - summary: |
       Отличие карточек товара по стилям
     environment: |
@@ -388,7 +388,7 @@ bugreports:
       Карточка товара отличается по стилю, элементы выходят за рамки
       Ошибка изображена на скриншоте /bug.png
 
-bugreports:
+
   - summary: |
       Цена в поле "До" может быть отрицательной
     environment: |
@@ -403,7 +403,7 @@ bugreports:
     actual-result: |
       В форме ввода цены, в поле "До", при нажатии на стрелочку "вниз" цена уходит в минус после нуля
 
-bugreports:
+
   - summary: |
       Кнопки в корзине не в один ряд
     environment: |
