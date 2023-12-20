@@ -4,7 +4,7 @@ test-cases:
   - summary: |
       Проверка отображения товара в наличии
     status: fail
-    
+
 bugreports:
   - summary: |
       Не работает поиск по ключевому слову
